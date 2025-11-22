@@ -865,9 +865,9 @@ Built on top of excellent open-source libraries:
 
 ## 📊 Stats
 
-- ![npm downloads](https://img.shields.io/npm/dm/react-image-crop-pro.svg)
-- ![GitHub stars](https://img.shields.io/github/stars/mashrulhaque/react-image-crop-pro.svg)
-- ![GitHub issues](https://img.shields.io/github/issues/mashrulhaque/react-image-crop-pro.svg)
+[![npm downloads](https://img.shields.io/npm/dm/react-image-crop-pro.svg)](https://www.npmjs.com/package/react-image-crop-pro)
+[![GitHub stars](https://img.shields.io/github/stars/mashrulhaque/react-image-crop-pro.svg)](https://github.com/mashrulhaque/react-image-crop-pro)
+[![GitHub issues](https://img.shields.io/github/issues/mashrulhaque/react-image-crop-pro.svg)](https://github.com/mashrulhaque/react-image-crop-pro/issues)
 
 ---
 
