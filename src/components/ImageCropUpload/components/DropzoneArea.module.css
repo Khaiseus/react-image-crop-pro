@@ -1,0 +1,70 @@
+/* DropzoneArea Component Styles */
+/* Uses CSS custom properties for theming */
+
+.dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: var(--ricu-spacing-xl, 2rem);
+  border: var(--ricu-borders-width-normal, 2px) dashed var(--ricu-colors-dropzoneBorder, #cbd5e0);
+  border-radius: var(--ricu-borders-radius-lg, 8px);
+  background-color: var(--ricu-colors-dropzoneBackground, #f7fafc);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-slow, 300ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.dropzone:hover:not(.disabled) {
+  border-color: var(--ricu-colors-dropzoneBorderHover, #4299e1);
+  background-color: var(--ricu-colors-dropzoneBackgroundHover, #ebf8ff);
+}
+
+.dropzone.active {
+  border-color: var(--ricu-colors-dropzoneBorderActive, #48bb78);
+  background-color: var(--ricu-colors-dropzoneBackgroundActive, #f0fff4);
+}
+
+.dropzone.reject {
+  border-color: var(--ricu-colors-dropzoneBorderReject, #f56565);
+  background-color: var(--ricu-colors-dropzoneBackgroundReject, #fff5f5);
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dropzone:focus {
+  outline: 2px solid var(--ricu-colors-primary, #4299e1);
+  outline-offset: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--ricu-spacing-md, 1rem);
+  color: var(--ricu-colors-secondary, #718096);
+}
+
+.text {
+  font-size: var(--ricu-typography-fontSize-base, 1rem);
+  color: var(--ricu-colors-textSecondary, #4a5568);
+  margin: 0;
+}
+
+.dropzone.active .icon,
+.dropzone.active .text {
+  color: var(--ricu-colors-success, #48bb78);
+}
+
+.dropzone.reject .icon,
+.dropzone.reject .text {
+  color: var(--ricu-colors-error, #f56565);
+}

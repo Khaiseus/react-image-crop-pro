@@ -1,0 +1,34 @@
+/* PreviewArea Component Styles */
+/* Uses CSS custom properties for theming */
+
+.previewArea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  padding: var(--ricu-spacing-md, 1rem);
+}
+
+.label {
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+  margin-bottom: var(--ricu-spacing-sm, 0.5rem);
+}
+
+.previewContainer {
+  display: flex;
+  justify-content: center;
+  padding: var(--ricu-spacing-md, 1rem);
+  background-color: var(--ricu-colors-backgroundAlt, #f7fafc);
+  border-radius: var(--ricu-borders-radius-lg, 8px);
+  border: var(--ricu-borders-width-thin, 1px) solid var(--ricu-colors-controlBorder, #e2e8f0);
+}
+
+.canvas {
+  border: var(--ricu-borders-width-normal, 2px) solid var(--ricu-colors-border, #cbd5e0);
+  background-color: var(--ricu-colors-surface, #fff);
+}
+
+.canvas.circular {
+  border-radius: 50%;
+}

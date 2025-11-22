@@ -1,0 +1,107 @@
+{
+  "name": "react-image-crop-pro",
+  "version": "1.0.0",
+  "description": "A modern React image cropping component with drag-and-drop upload, touch gestures (pinch-zoom & rotation), and TypeScript support. Perfect for avatars, profile pictures, and image editing with built-in accessibility.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dist/react-image-crop-pro.css": "./dist/react-image-crop-pro.css",
+    "./style.css": "./dist/react-image-crop-pro.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "crop",
+    "cropper",
+    "upload",
+    "drag-and-drop",
+    "dropzone",
+    "resize",
+    "rotate",
+    "zoom",
+    "touch",
+    "mobile",
+    "gesture",
+    "pinch-zoom",
+    "avatar",
+    "profile-picture",
+    "typescript",
+    "accessible",
+    "a11y",
+    "react-component",
+    "image-editor",
+    "photo-editor"
+  ],
+  "author": "Mashrul Hossain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mashrulhaque/react-image-crop-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mashrulhaque/react-image-crop-pro/issues"
+  },
+  "homepage": "https://github.com/mashrulhaque/react-image-crop-pro#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/coverage-v8": "^4.0.12",
+    "@vitest/ui": "^4.0.12",
+    "axe-core": "^4.11.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "jest-axe": "^10.0.0",
+    "jsdom": "^27.2.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.12"
+  },
+  "dependencies": {
+    "react-dropzone": "^14.3.8",
+    "react-easy-crop": "^5.5.5"
+  }
+}

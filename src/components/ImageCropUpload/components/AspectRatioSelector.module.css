@@ -1,0 +1,63 @@
+/* AspectRatioSelector Component Styles */
+/* Uses CSS custom properties for theming */
+
+.aspectRatioSelector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  padding: var(--ricu-spacing-md, 1rem);
+}
+
+.label {
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+  margin-bottom: var(--ricu-spacing-sm, 0.5rem);
+}
+
+.presets {
+  display: flex;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  flex-wrap: wrap;
+}
+
+.preset {
+  display: flex;
+  align-items: center;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  padding: var(--ricu-spacing-sm, 0.5rem) var(--ricu-spacing-md, 1rem);
+  border: var(--ricu-borders-width-thin, 1px) solid var(--ricu-colors-buttonBorder, #cbd5e0);
+  border-radius: var(--ricu-borders-radius-md, 6px);
+  background-color: var(--ricu-colors-buttonBackground, #fff);
+  color: var(--ricu-colors-buttonText, #4a5568);
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-medium, 500);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-normal, 200ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.preset:hover {
+  background-color: var(--ricu-colors-buttonBackgroundHover, #f7fafc);
+  border-color: var(--ricu-colors-primary, #4299e1);
+  color: var(--ricu-colors-primary, #4299e1);
+}
+
+.preset.active {
+  background-color: var(--ricu-colors-primary, #4299e1);
+  border-color: var(--ricu-colors-primary, #4299e1);
+  color: var(--ricu-colors-textOnPrimary, #fff);
+}
+
+.preset:focus {
+  outline: 2px solid var(--ricu-colors-primary, #4299e1);
+  outline-offset: 2px;
+}
+
+.preset:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}

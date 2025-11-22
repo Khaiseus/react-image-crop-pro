@@ -1,0 +1,223 @@
+/* ImageCropUpload Main Component Styles */
+/* Uses CSS custom properties for theming */
+
+/* Default theme values (light theme) */
+:root {
+  /* Colors - Primary */
+  --ricu-colors-primary: #4299e1;
+  --ricu-colors-primaryHover: #3182ce;
+  --ricu-colors-primaryActive: #2c5282;
+  --ricu-colors-primaryLight: #ebf8ff;
+
+  /* Colors - Text */
+  --ricu-colors-text: #2d3748;
+  --ricu-colors-textSecondary: #4a5568;
+  --ricu-colors-textOnPrimary: #ffffff;
+
+  /* Colors - Background */
+  --ricu-colors-background: #ffffff;
+  --ricu-colors-backgroundAlt: #f7fafc;
+  --ricu-colors-surface: #ffffff;
+  --ricu-colors-controlBackground: #ffffff;
+
+  /* Colors - Border */
+  --ricu-colors-border: #cbd5e0;
+  --ricu-colors-borderHover: #a0aec0;
+  --ricu-colors-controlBorder: #e2e8f0;
+
+  /* Colors - State */
+  --ricu-colors-error: #f56565;
+  --ricu-colors-errorLight: #fff5f5;
+  --ricu-colors-errorBorder: #feb2b2;
+
+  /* Colors - Button */
+  --ricu-colors-buttonBackground: #ffffff;
+  --ricu-colors-buttonBackgroundHover: #f7fafc;
+  --ricu-colors-buttonText: #4a5568;
+  --ricu-colors-buttonBorder: #cbd5e0;
+  --ricu-colors-buttonBorderHover: #a0aec0;
+
+  /* Spacing */
+  --ricu-spacing-sm: 0.5rem;
+  --ricu-spacing-md: 1rem;
+  --ricu-spacing-lg: 1.5rem;
+  --ricu-spacing-xl: 2rem;
+
+  /* Borders */
+  --ricu-borders-radius-sm: 4px;
+  --ricu-borders-radius-md: 6px;
+  --ricu-borders-radius-lg: 8px;
+  --ricu-borders-width-thin: 1px;
+  --ricu-borders-width-normal: 2px;
+
+  /* Typography */
+  --ricu-typography-fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ricu-typography-fontSize-sm: 0.875rem;
+  --ricu-typography-fontSize-base: 1rem;
+  --ricu-typography-fontSize-lg: 1.125rem;
+  --ricu-typography-fontWeight-semibold: 600;
+
+  /* Transitions */
+  --ricu-transitions-duration-normal: 200ms;
+  --ricu-transitions-easing-ease: ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: var(--ricu-typography-fontFamily);
+}
+
+.croppingMode {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-lg);
+}
+
+.cropperWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-md);
+  padding: var(--ricu-spacing-md);
+  background-color: var(--ricu-colors-controlBackground);
+  border-radius: var(--ricu-borders-radius-lg);
+  border: var(--ricu-borders-width-thin) solid var(--ricu-colors-controlBorder);
+}
+
+@media (min-width: 768px) {
+  .controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .controls > * {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: var(--ricu-spacing-md);
+  justify-content: flex-end;
+  padding: var(--ricu-spacing-md);
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--ricu-typography-fontSize-base);
+  font-weight: var(--ricu-typography-fontWeight-semibold);
+  border: none;
+  border-radius: var(--ricu-borders-radius-md);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-normal) var(--ricu-transitions-easing-ease);
+}
+
+.button:focus {
+  outline: 2px solid var(--ricu-colors-primary);
+  outline-offset: 2px;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: var(--ricu-colors-buttonBackground);
+  color: var(--ricu-colors-buttonText);
+  border: var(--ricu-borders-width-thin) solid var(--ricu-colors-buttonBorder);
+}
+
+.cancelButton:hover:not(:disabled) {
+  background-color: var(--ricu-colors-buttonBackgroundHover);
+  border-color: var(--ricu-colors-buttonBorderHover);
+}
+
+.cropButton {
+  background-color: var(--ricu-colors-primary);
+  color: var(--ricu-colors-textOnPrimary);
+}
+
+.cropButton:hover:not(:disabled) {
+  background-color: var(--ricu-colors-primaryHover);
+}
+
+.error {
+  padding: var(--ricu-spacing-md);
+  margin-top: var(--ricu-spacing-md);
+  background-color: var(--ricu-colors-errorLight);
+  border: var(--ricu-borders-width-thin) solid var(--ricu-colors-errorBorder);
+  border-radius: var(--ricu-borders-radius-md);
+  color: var(--ricu-colors-error);
+}
+
+.error p {
+  margin: 0 0 0.75rem 0;
+}
+
+.retryButton {
+  padding: var(--ricu-spacing-sm) var(--ricu-spacing-md);
+  font-size: var(--ricu-typography-fontSize-sm);
+  font-weight: var(--ricu-typography-fontWeight-semibold);
+  background-color: var(--ricu-colors-buttonBackground);
+  color: var(--ricu-colors-primary);
+  border: var(--ricu-borders-width-thin) solid var(--ricu-colors-primary);
+  border-radius: var(--ricu-borders-radius-sm);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-normal) var(--ricu-transitions-easing-ease);
+}
+
+.retryButton:hover {
+  background-color: var(--ricu-colors-primaryLight);
+}
+
+.retryButton:focus {
+  outline: 2px solid var(--ricu-colors-primary);
+  outline-offset: 2px;
+}
+
+.processing,
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: var(--ricu-spacing-xl);
+  text-align: center;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--ricu-colors-controlBorder);
+  border-top-color: var(--ricu-colors-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: var(--ricu-spacing-md);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.processing p,
+.complete p {
+  font-size: var(--ricu-typography-fontSize-lg);
+  color: var(--ricu-colors-textSecondary);
+  margin: 0 0 var(--ricu-spacing-md) 0;
+}

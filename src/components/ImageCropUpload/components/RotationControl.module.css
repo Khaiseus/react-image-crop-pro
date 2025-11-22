@@ -1,0 +1,94 @@
+/* RotationControl Component Styles */
+/* Uses CSS custom properties for theming */
+
+.rotationControl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  padding: var(--ricu-spacing-md, 1rem);
+}
+
+.label {
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+  margin-bottom: var(--ricu-spacing-sm, 0.5rem);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--ricu-spacing-md, 1rem);
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: var(--ricu-borders-width-thin, 1px) solid var(--ricu-colors-buttonBorder, #cbd5e0);
+  border-radius: var(--ricu-borders-radius-md, 6px);
+  background-color: var(--ricu-colors-buttonBackground, #fff);
+  color: var(--ricu-colors-buttonText, #4a5568);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-normal, 200ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.button:hover {
+  background-color: var(--ricu-colors-buttonBackgroundHover, #f7fafc);
+  border-color: var(--ricu-colors-primary, #4299e1);
+  color: var(--ricu-colors-primary, #4299e1);
+}
+
+.button:focus {
+  outline: 2px solid var(--ricu-colors-primary, #4299e1);
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 100px;
+}
+
+.value {
+  font-size: var(--ricu-typography-fontSize-lg, 1.125rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+}
+
+.resetButton {
+  padding: 0.25rem 0.75rem;
+  font-size: var(--ricu-typography-fontSize-xs, 0.75rem);
+  border: var(--ricu-borders-width-thin, 1px) solid var(--ricu-colors-buttonBorder, #cbd5e0);
+  border-radius: var(--ricu-borders-radius-sm, 4px);
+  background-color: var(--ricu-colors-buttonBackground, #fff);
+  color: var(--ricu-colors-secondary, #718096);
+  cursor: pointer;
+  transition: all var(--ricu-transitions-duration-normal, 200ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.resetButton:hover {
+  background-color: var(--ricu-colors-buttonBackgroundHover, #f7fafc);
+  border-color: var(--ricu-colors-primary, #4299e1);
+  color: var(--ricu-colors-primary, #4299e1);
+}
+
+.resetButton:focus {
+  outline: 2px solid var(--ricu-colors-primary, #4299e1);
+  outline-offset: 2px;
+}

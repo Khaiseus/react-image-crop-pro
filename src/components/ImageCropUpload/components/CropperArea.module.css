@@ -1,0 +1,17 @@
+/* CropperArea Component Styles */
+/* Uses CSS custom properties for theming */
+
+.cropperContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: var(--ricu-colors-cropperBackground, #000);
+  border-radius: var(--ricu-borders-radius-lg, 8px);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cropperContainer {
+    height: 500px;
+  }
+}

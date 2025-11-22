@@ -1,0 +1,80 @@
+/* ZoomControl Component Styles */
+/* Uses CSS custom properties for theming */
+
+.zoomControl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ricu-spacing-sm, 0.5rem);
+  padding: var(--ricu-spacing-md, 1rem);
+}
+
+.label {
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+  margin-bottom: var(--ricu-spacing-sm, 0.5rem);
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.minLabel,
+.maxLabel {
+  font-size: var(--ricu-typography-fontSize-xs, 0.75rem);
+  color: var(--ricu-colors-secondary, #718096);
+  min-width: 40px;
+}
+
+.slider {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--ricu-colors-sliderTrack, #e2e8f0);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ricu-colors-sliderThumb, #4299e1);
+  cursor: pointer;
+  transition: background var(--ricu-transitions-duration-normal, 200ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: var(--ricu-colors-sliderThumbHover, #3182ce);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ricu-colors-sliderThumb, #4299e1);
+  cursor: pointer;
+  border: none;
+  transition: background var(--ricu-transitions-duration-normal, 200ms) var(--ricu-transitions-easing-ease, ease);
+}
+
+.slider::-moz-range-thumb:hover {
+  background: var(--ricu-colors-sliderThumbHover, #3182ce);
+}
+
+.slider:focus {
+  outline: 2px solid var(--ricu-colors-primary, #4299e1);
+  outline-offset: 2px;
+}
+
+.value {
+  font-size: var(--ricu-typography-fontSize-sm, 0.875rem);
+  font-weight: var(--ricu-typography-fontWeight-semibold, 600);
+  color: var(--ricu-colors-text, #2d3748);
+  text-align: center;
+  min-width: 50px;
+}
