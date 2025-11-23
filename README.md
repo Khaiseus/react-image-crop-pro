@@ -68,6 +68,8 @@ import 'react-image-crop-pro/style.css';
 
 ```tsx
 import { ImageCropUpload } from 'react-image-crop-pro';
+// or use default import
+// import ImageCropUpload from 'react-image-crop-pro';
 import 'react-image-crop-pro/dist/react-image-crop-pro.css';
 
 function App() {

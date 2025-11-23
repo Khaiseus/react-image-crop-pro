@@ -1,6 +1,6 @@
 {
   "name": "react-image-crop-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern React image cropping component with drag-and-drop upload, touch gestures (pinch-zoom & rotation), and TypeScript support. Perfect for avatars, profile pictures, and image editing with built-in accessibility.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

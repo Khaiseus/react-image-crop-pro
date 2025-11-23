@@ -42,10 +42,20 @@ export function readFileAsDataURL(file: File): Promise<string> {
     };
 
     reader.onerror = () => {
-      reject(new Error('FileReader error: Failed to read file'));
+      const errorMessage = reader.error?.message || 'Unknown error';
+      const errorName = reader.error?.name || 'FileReaderError';
+      reject(new Error(`FileReader error: Failed to read file (${errorName}: ${errorMessage})`));
     };
 
-    reader.readAsDataURL(file);
+    reader.onabort = () => {
+      reject(new Error('FileReader aborted: File reading was cancelled'));
+    };
+
+    try {
+      reader.readAsDataURL(file);
+    } catch (error) {
+      reject(new Error(`Failed to initiate file reading: ${error instanceof Error ? error.message : 'Unknown error'}`));
+    }
   });
 }
 
